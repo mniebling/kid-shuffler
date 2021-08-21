@@ -1,0 +1,23 @@
+.layout {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 20px;
+}
+
+.inputList {
+  border: 1px solid #ccc;
+  height: 400px;
+  width: 250px;
+}
+
+.output {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.assignment {
+  background: #eee;
+  padding: 5px 20px 5px 10px;
+}
