@@ -1,8 +1,16 @@
+.table {
+  border-collapse: collapse;
+}
+
 .assignment {
-  background: #eee;
   padding: 5px 20px 5px 10px;
 }
 
 .assignment td {
-  padding-right: 20px;
+  border: 1px solid #ddd;
+  padding: 5px 20px 5px 5px;
+}
+
+.assignment td:first-of-type {
+  padding: 0;
 }

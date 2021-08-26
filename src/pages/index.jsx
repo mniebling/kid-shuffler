@@ -43,7 +43,6 @@ export default function HomePage() {
       assignments.push(pairs)
     }
 
-    console.info(assignments)
     setAssignments(assignments)
   }, [kids])
 

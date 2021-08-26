@@ -1,12 +1,15 @@
-export function Pair({ pair }) {
+import css from './Pair.module.css'
 
-  if (pair[0] === ('SOLO')) return <tr><td>{ pair[1] }</td></tr>
-  if (pair[1] === ('SOLO')) return <tr><td>{ pair[0] }</td></tr>
+
+export function Pair({ color, pair }) {
 
   return (
     <tr>
-      <td>{ pair[0] }</td>
-      <td>{ pair[1] }</td>
+      <td className={ css.color } style={ { backgroundColor: color } }>
+        {/* <div className={ css.color }></div> */}
+      </td>
+      <td>{ pair[0] !== 'SOLO' ? pair[0] : '—' }</td>
+      <td>{ pair[1] !== 'SOLO' ? pair[1] : '—' }</td>
     </tr>
   )
 }

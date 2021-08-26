@@ -1,0 +1,6 @@
+.color {
+  --size: 25px;
+
+  height: var(--size);
+  width: var(--size);
+}

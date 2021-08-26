@@ -4,12 +4,22 @@ import css from './Assignment.module.css'
 
 export function Assignment({ pairs }) {
 
+  const colors = [
+    'red',
+    'orange',
+    'gold',
+    'green',
+    'blue',
+    'purple',
+    'indigo',
+  ]
+
   return (
     <div className={ css.assignment }>
-      <table>
+      <table className={ css.table }>
         <tbody>
           { pairs.map((pair, i) => (
-            <Pair key={ `${i}` } pair={ pair }></Pair>
+            <Pair color={ colors[i % 7] } key={ `pair-${i}` } pair={ pair }></Pair>
           )) }
         </tbody>
       </table>
