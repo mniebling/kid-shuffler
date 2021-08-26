@@ -11,7 +11,7 @@ export function Assignment({ pairs, number }) {
     'green',
     'blue',
     'purple',
-    'indigo',
+    'white',
   ]
 
   return (
