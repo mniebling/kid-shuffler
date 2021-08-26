@@ -12,7 +12,7 @@
 
 .output {
   display: grid;
-  grid-template-columns: repeat(6, max-content);
+  grid-template-columns: repeat(5, max-content);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }

@@ -2,3 +2,7 @@
   background: #eee;
   padding: 5px 20px 5px 10px;
 }
+
+.assignment td {
+  padding-right: 20px;
+}

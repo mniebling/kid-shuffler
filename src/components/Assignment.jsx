@@ -6,9 +6,13 @@ export function Assignment({ pairs }) {
 
   return (
     <div className={ css.assignment }>
-      { pairs.map((pair, i) => (
-        <Pair key={ `${i}` } pair={ pair }></Pair>
-      )) }
+      <table>
+        <tbody>
+          { pairs.map((pair, i) => (
+            <Pair key={ `${i}` } pair={ pair }></Pair>
+          )) }
+        </tbody>
+      </table>
     </div>
   )
 }
