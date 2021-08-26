@@ -59,7 +59,7 @@ export default function HomePage() {
       </textarea>
 
       <div className={ css.output }>
-        { assignments.map((pairs, i) => <Assignment pairs={ pairs } key={ i } /> ) }
+        { assignments.map((pairs, i) => <Assignment pairs={ pairs } number={ i + 1 } key={ i } /> ) }
       </div>
 
     </div>

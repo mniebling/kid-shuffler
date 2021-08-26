@@ -2,7 +2,7 @@ import { Pair } from './Pair'
 import css from './Assignment.module.css'
 
 
-export function Assignment({ pairs }) {
+export function Assignment({ pairs, number }) {
 
   const colors = [
     'red',
@@ -16,6 +16,7 @@ export function Assignment({ pairs }) {
 
   return (
     <div className={ css.assignment }>
+      <div>{ number }</div>
       <table className={ css.table }>
         <tbody>
           { pairs.map((pair, i) => (
