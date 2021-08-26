@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import { Assignment } from '../components/Assignment'
 import css from './index.module.css'
-
 
 export default function HomePage() {
 
@@ -60,24 +60,9 @@ export default function HomePage() {
       </textarea>
 
       <div className={ css.output }>
-        { assignments.map((pairs, i) => (
-            <div key={ i } className={ css.assignment }>
-              { pairs.map((pair, j) => (
-                <Pair key={ `${i}-${j}` } pair={ pair }></Pair>
-              )) }
-            </div>
-          )
-        ) }
+        { assignments.map((pairs, i) => <Assignment pairs={ pairs } key={ i } /> ) }
       </div>
 
     </div>
   </>
-
-  function Pair({ pair }) {
-
-    if (pair[0] === ('SOLO')) return <div>{ pair[1] }</div>
-    if (pair[1] === ('SOLO')) return <div>{ pair[0] }</div>
-
-    return <div>{ pair[0] } / { pair[1] }</div>
-  }
 }
